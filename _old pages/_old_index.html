@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Shane Khant Soe Moe/ragnar98">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <meta http-equiv="refresh" content="40">
+
+        <title>Shane Khant Soe Moe</title>
+
+        <link rel="icon" href="images/smile.png">
+        <link rel="stylesheet" type="text/css" href="_old_index.css">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!--JQuery usage-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(window).on('scroll', function() {
+                if($(window).scrollTop()) {
+                    $('nav').addClass('black');
+                } 
+                else {
+                    $('nav').removeClass('black');
+                }
+            }) 
+        </script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <nav>
+                <div class="shane">SHANE KHANT SOE MOE</div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="https://github.com/ssoemoe" target="_blank">Github</a></li>
+                    <li><a href="https://medium.com/@shanekhantsoemoe98" target="_blank">Blog</a></li>
+                    <li><a href="#social_media">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Wallpaper section-->
+            <section class="home_section1"></section>
+
+            <!--About Starting Place-->
+            <section class="home_content">
+                <br>
+                <center><h1 id="about" style="font-size: 40px;">Shane Khant Soe Moe</h1></center>
+
+                <p>                    
+                    A computer science student at University of Maryland, College Park, who dreams to become a
+                    software engineer and great maker. Interested in IoT, machine learning, mobile development, 
+                    quantum computing, and web development. <br><br>                    
+                </p>
+
+                <center>
+                    <blockquote id = "proverb">
+                        <b><i>"There is no shortcut to success................"</i></b>
+                    </blockquote>
+                </center>
+
+                <!--window.open() for new tab-->
+                <center>
+                    <button style="text-align: center;" class="section_button" onclick="window.open('pdfs/resume.pdf');">
+                        Resume
+                    </button> 
+                </center><br><br>
+
+                <h3>Programming Languages I Know</h3>
+                <p class="lang_logos">                
+                    <img class="lang_logos" src="images/java_icon.svg">
+                    <img class="lang_logos" src="images/python_icon.png">
+                    <img class="lang_logos" src="images/C_icon.png">
+                    <img class="lang_logos" src="images/php_icon.svg">
+                    <img class="lang_logos" src="images/js-icon.png" style="padding-bottom: 15px;">
+                    <img class="lang_logos" src="images/R_logo.png"><br><br>
+
+                    <b>Proficient in:</b> Java, C, JavaScript<br>
+                    <b>Familiar with:</b> Python, PHP, R<br>
+                </p><br>
+
+                <h3>Databases I Know</h3>
+                <p class="database_logos">
+                    <img class="database_logos" src="images/sqlite_icon.png" style="width: 200px;margin-bottom: 40px;">
+                    <img class="database_logos" src="images/mysql_icon.svg">
+                </p><br>
+
+                <h3>Operating Systems I Know</h3>
+                <p class="os_logos">
+                    <img class="os_logos" src="images/windows_logo.png">
+                    <img class="os_logos" src="images/ubuntu_logo.png">
+                </p><br>
+
+                <h3>Mobile Development</h3>
+                <p>
+                    <img class="android_logo" src="images/android_logo.png">
+                </p><br>
+
+                <h3>Frameworks I Know</h3>
+                <p>
+                    JUnit, JQuery, Bootstrap, React
+                </p><br>
+
+            </section>
+
+            <!--Contacts-->
+            <div class = "contacts">
+                <center><h2 id ="social_media">You can reach me via...</h2></center>
+
+                <center>
+                    <a href = "https://www.facebook.com/shane.proton" target="_blank">
+                        <img id="fb_logo" src="images/fb-icon.png">
+                    </a>
+
+                    <button id="gmail_button" onclick="alert('ssoemoe@terpmail.umd.edu');">
+                        <img id="gmail_logo" src="images/gmail.png">
+                    </button>
+
+                    <a href="https://github.com/ssoemoe" target="_blank">
+                        <img id="github_logo" src="images/github.png">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shane-khant-soe-moe-24ab45113" target="_blank">
+                        <img id="in_logo" src="images/in.png">                    
+                    </a> 
+                    <br><br>
+                </center>
+
+
+            </div>
+
+            <p id="footer_p"><br>
+                &copy;Shane Khant Soe Moe (Yahu
+                <img src="images/love_icon.png" style="width: 15px; height: 13px;">
+                ), February 24, 2018.<br>
+                <img src="images/web_dev_logo.png" style="width: 100px; height: 50px;">
+            </p>
+        </div>
+    </body>
+</html>

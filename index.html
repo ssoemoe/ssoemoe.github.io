@@ -1,60 +1,82 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!DOCTYPE HTML>
+
+<html>
+
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Shane Khant Soe Moe/ragnar98">
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
-        <meta http-equiv="refresh" content="40">
-
-        <title>Shane Khant Soe Moe</title>
-
-        <link rel="icon" href="images/smile.png">
-        <link rel="stylesheet" type="text/css" href="homepage.css">
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <meta name="viewport" content="width=device-width"/>
+        <title>Shane Khant Soe Moe's Portfolio Website</title>
+        <link rel="stylesheet" href="index.css">
+        
+        <!--Quicksand Font-->
+        <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--JQuery usage-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(window).on('scroll', function() {
-                if($(window).scrollTop()) {
-                    $('nav').addClass('black');
-                } 
-                else {
-                    $('nav').removeClass('black');
-                }
-            }) 
-        </script>
-    </head>
-
+        
+        <script type="text/javascript" src="css3-mediaqueries.js"></script>
+     </head>
+    
     <body>
         <div class="wrapper">
-            <nav>
-                <div class="shane">SHANE KHANT SOE MOE</div>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="https://github.com/ssoemoe" target="_blank">Github</a></li>
-                    <li><a href="https://medium.com/@shanekhantsoemoe98" target="_blank">Blog</a></li>
-                    <li><a href="#social_media">Contact</a></li>
-                </ul>
-            </nav>
+            <header>
+                <nav>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </div>
+                    
+                    <div class="logo">
+                        SHANE KHANT SOE MOE
+                    </div>
+                    
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        
+        <div class="content">
+            
+        </div>
+            
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+              })  
+            })
+            
+             // Scrolling Effect
 
-            <!--Wallpaper section-->
-            <section class="home_section1"></section>
+              $(window).on("scroll", function() {
+                    if($(window).scrollTop()) {
+                          $('nav').addClass('black');
+                    }
 
-            <!--About Starting Place-->
+                    else {
+                          $('nav').removeClass('black');
+                    }
+              })
+         </script>
+        
+        <!--changes-->
+        <!--About Starting Place-->
             <section class="home_content">
                 <br>
                 <center><h1 id="about" style="font-size: 40px;">Shane Khant Soe Moe</h1></center>
 
                 <p>                    
-                    A computer science student at University of Maryland, College Park, who dreams to become a
-                    software engineer and great maker. Interested in IoT, machine learning, mobile development, 
-                    quantum computing, and web development. <br><br>                    
+                    A computer science student at University of Maryland, College Park, who dreams of becoming a
+                    software engineer and great maker. Interested in web development, mobile development, IoT, machine learning, and
+                    quantum computing. <br><br>                    
                 </p>
 
                 <center>
