@@ -1,12 +1,13 @@
 @import url('http://fonts.googleapis.com/css?family=Quicksand');
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: "Quicksand",sans-serif;
 }
 
 body {
-    font-family: "Quicksand",sans-serif;
     font-size: 24px;
 }
 
