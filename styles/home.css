@@ -1,8 +1,92 @@
+html,
 body {
-    font-family: 'Quicksand';
-    font-size: 20px;
+    height: 100%;
+    font-family: 'Pacifico', cursive;
+    margin: 5px 40px;
+    background-color: black;
 }
 
-#navbar {
-    padding: 20px;
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
+
+#name {
+    font-size: 70px;
+    -webkit-animation: colorchange 20s infinite alternate;
+}
+
+#portfolio {
+    color: white;
+    font-size: 30px;
+    border: solid 1px white;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+    -webkit-animation: colorchange 20s infinite reverse;
+}
+
+#portfolio:hover {
+    font-size: 40px;
+    transition-duration: 2s;
+}
+
+@-webkit-keyframes colorchange {
+      0% {
+        
+        color: green;
+      }
+      
+      10% {
+        
+        color: white;
+      }
+      
+      20% {
+        
+        color: #1abc9c;
+      }
+      
+      30% {
+        
+        color: white;
+      }
+      
+      40% {
+        
+        color: blue;
+      }
+      
+      50% {
+        
+        color: #34495e;
+      }
+      
+      60% {
+        
+        color: greenyellow;
+      }
+      
+      70% {
+        
+        color: lightcyan;
+      }
+      80% {
+     
+        color: lightgoldenrodyellow;
+      }
+      
+      90% {
+     
+        color: blanchedalmond;
+      }
+      
+      100% {
+        
+        color: white;
+      }
+}
+
