@@ -4,6 +4,11 @@
     </head>
 
     <body>
-        <a href="javascript:(function(){document.createElement('script').src = 'https://github.com/ssoemoe/ssoemoe.github.io/blob/master/bookmarklets/test.js';})()">Change Google Logo</a>
+        <a href="javascript:(function(){
+            let script = document.createElement('script');
+            script.src = 'https://github.com/ssoemoe/ssoemoe.github.io/blob/master/bookmarklets/test.js';
+            document.body.appendChild(script);
+        })()">
+        Change Google Logo</a>
     </body>
 </html>
