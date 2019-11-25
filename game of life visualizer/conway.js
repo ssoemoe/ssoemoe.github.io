@@ -9,8 +9,6 @@ function init() {
         }
         board.push(row);
     }
-
-    console.log();
 }
 
 init();
