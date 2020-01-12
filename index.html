@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shane Khant Soe Moe</title>
+    <title>Shane</title>
     <link rel="icon" href="media/coffee.png" />
     <link
       rel="stylesheet"
@@ -12,20 +12,110 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pacifico|Vollkorn"
+      href="https://fonts.googleapis.com/css?family=Nunito|Pacifico&display=swap"
       rel="stylesheet"
     />
     <link href="styles/home.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   </head>
 
   <body>
-    <div class="container">
+    <div class="container-fluid" id="intro-div">
       <div class="row text-center">
-        <h1>
-          <span id="name">Hello! I'm Shane</span><br /><br />
-          <a id="portfolio" href="about_me.html">Check Portfolio </a>
-        </h1>
+        <div class="col-md-12">
+          <h1>
+            <!-- <span style="color:white;font-size: 3vw;">|</span> -->
+            <span class="typed" id="name"></span>
+          </h1>
+          <div class="row m-5">
+            <a id="about-me" class="home-btn col-xs-3 m-2 p-2" href=""
+              >About Me</a
+            >
+            <a id="projects" class="home-btn col-xs-3 m-2 p-2" href=""
+              >Projects</a
+            >
+            <a id="resume" class="home-btn col-xs-3 m-2 p-2" href="">Resume</a>
+            <a id="games" class="home-btn col-xs-3 m-2 p-2" href="">Games</a>
+          </div>
+          <div id="activities-div m-5">
+            <a href="">
+              <img class="activity-img" height="50" src="./media/gmail.png" />
+            </a>
+            <a href="">
+              <img class="activity-img" height="50" src="./media/github.svg" />
+            </a>
+            <a href="">
+              <img
+                class="activity-img"
+                height="50"
+                src="./media/linkedin.png"
+              />
+            </a>
+            <br />
+          </div>
+        </div>
       </div>
     </div>
+    <div class="down-arrow-div">
+      <img id="bouncing-down-arrow" height="50" src="media/arrow.png" />
+    </div>
+    <br />
+    <div class="container-fluid" id="details">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>About Myself</h1>
+          <p>
+            I am an undergraduate Computer Science student at University of
+            Maryland, College Park. I am an incoming associate software engineer
+            at Oil Price Information Service (OPIS by IHS Markit) and have
+            worked as a full-stack Web Developer and react-native mobile
+            developer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(function() {
+        $(".typed").typed({
+          strings: ["Hello!", "How are you?", "I am Shane.", "Welcome!"],
+          // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+          stringsElement: null,
+          // typing speed
+          typeSpeed: 100,
+          // time before typing starts
+          startDelay: 1200,
+          // backspacing speed
+          backSpeed: 100,
+          // time before backspacing
+          backDelay: 500,
+          // loop
+          loop: true,
+          // false = infinite
+          loopCount: false,
+          // show cursor
+          showCursor: false,
+          // character for cursor
+          cursorChar: "|",
+          // attribute to type (null == text)
+          attr: null,
+          // either html or text
+          contentType: "html",
+          // call when done callback function
+          callback: function() {},
+          // starting callback function before each string
+          preStringTyped: function() {},
+          //callback for every typed string
+          onStringTyped: function() {},
+          // callback for reset
+          resetCallback: function() {}
+        });
+      });
+    </script>
   </body>
 </html>
