@@ -1,92 +1,164 @@
 html,
 body {
-    height: 100%;
-    font-family: 'Pacifico', cursive;
-    margin: 5px 40px;
-    background-color: black;
+  height: 100%;
+  background-color: #c25619;
+  font-family: "Nunito";
 }
 
-.container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+#intro-div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #name {
-    font-size: 70px;
-    -webkit-animation: colorchange 20s infinite alternate;
+  font-size: 3vw;
+  color: white;
 }
 
-#portfolio {
-    color: white;
-    font-size: 30px;
-    border: solid 1px white;
-    padding: 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    
-    -webkit-animation: colorchange 20s infinite reverse;
+.home-btn {
+  color: white;
+  font-size: 1.5vw;
+  border: solid 2px white;
+  border-radius: 10px;
+  text-decoration: none !important;
 }
 
-#portfolio:hover {
-    font-size: 40px;
-    transition-duration: 2s;
+.home-btn:hover {
+  border: 1px solid black;
+  color: black;
 }
 
+.activity-img {
+  margin: 10px 20px;
+  transition: transform 0.5s;
+}
+
+.activity-img:hover {
+  transform: scale(1.5);
+}
+
+.down-arrow-div {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+}
+
+#bouncing-down-arrow {
+  -webkit-animation: bounce 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+  }
+  80% {
+    -webkit-transform: translateY(-20px);
+  }
+}
+
+#details {
+  color: white;
+  font-size: 1.5vw;
+}
+
+/*color change animation (NOT IN USE)*/
 @-webkit-keyframes colorchange {
-      0% {
-        
-        color: green;
-      }
-      
-      10% {
-        
-        color: white;
-      }
-      
-      20% {
-        
-        color: #1abc9c;
-      }
-      
-      30% {
-        
-        color: white;
-      }
-      
-      40% {
-        
-        color: blue;
-      }
-      
-      50% {
-        
-        color: #34495e;
-      }
-      
-      60% {
-        
-        color: greenyellow;
-      }
-      
-      70% {
-        
-        color: lightcyan;
-      }
-      80% {
-     
-        color: lightgoldenrodyellow;
-      }
-      
-      90% {
-     
-        color: blanchedalmond;
-      }
-      
-      100% {
-        
-        color: white;
-      }
+  0% {
+    color: white;
+  }
+
+  10% {
+    color: green;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: white;
+  }
+
+  40% {
+    color: mediumslateblue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: greenyellow;
+  }
+
+  70% {
+    color: lightcyan;
+  }
+  80% {
+    color: lightgoldenrodyellow;
+  }
+
+  90% {
+    color: blanchedalmond;
+  }
+
+  100% {
+    color: white;
+  }
 }
 
+.typed::after {
+  content: "|";
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor {
+  opacity: 0;
+  display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
