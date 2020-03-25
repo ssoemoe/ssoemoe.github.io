@@ -49,7 +49,12 @@
               target="blank"
               >Resume</a
             >
-            <a id="games" class="home-btn col-xs-3 m-2 p-2" href="">Games</a>
+            <a
+              id="games"
+              class="home-btn col-xs-3 m-2 p-2"
+              href="#games-showroom"
+              >Games</a
+            >
           </div>
           <div id="activities-div m-5">
             <a href="mailto:shanekhantsoemoe98@gmail.com">
@@ -115,15 +120,43 @@
 
     <div class="container-fluid" id="games-showroom">
       <div class="row p-3">
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
           <h1 class="text-center m-3">My Games</h1>
+          <p>Click the game to play!</p>
+          <div>
+            <a
+              href="https://ssoemoe.github.io/vanillajs-games/hangman/hangman.html"
+              class="play-game-btn"
+              style="background-color: blue;color: white;"
+              target="blank"
+            >
+              &nbsp;Hangman
+            </a>
+
+            <a
+              href="https://ssoemoe.github.io/vanillajs-games/tic-tac-toe/tictactoe.html"
+              class="play-game-btn"
+              target="blank"
+              style="background-color: #8F111D;color: white;"
+            >
+              Tic-Tac-Toe
+            </a>
+          </div>
         </div>
       </div>
-      <div class="card-deck p-3" id="games-slides-1"></div>
-      <!-- This is for more games -->
-      <!-- <div class="card-deck p-3" id="games-slides-2"></div> -->
     </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" id="footer-div">
+          <p id="footer">&copy; Copyright 2020, Shane Khant Soe Moe</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/lists.js"></script>
     <script src="./js/project-slides.js"></script>
+    <script src="./js/games-slides.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

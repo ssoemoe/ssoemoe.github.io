@@ -169,7 +169,7 @@ h1 {
 }
 
 #projects-showroom {
-  font-size: 1.5vw;
+  font-size: 1.5em;
   background-color: #eda926;
 }
 
@@ -189,4 +189,37 @@ h1 {
 .view-project-btn {
   border: 1px solid black !important;
   box-shadow: 2px 2px black;
+  color: ghostwhite;
+}
+
+#games-showroom {
+  font-size: 1.5em;
+  background-color: #458b74;
+  color: white;
+}
+
+.play-game-btn {
+  text-decoration: none;
+  border: 1px solid blue;
+  box-shadow: 2px 2px black;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.play-game-btn:hover {
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 1.5s;
+}
+
+#footer-div {
+  padding-top: 150px;
+  background-color: #458b74;
+}
+
+#footer {
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
 }
