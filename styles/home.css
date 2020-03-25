@@ -1,8 +1,11 @@
 html,
 body {
   height: 100%;
-  background-color: #c25619;
   font-family: "Nunito";
+}
+
+h1 {
+  font-weight: bold;
 }
 
 #intro-div {
@@ -10,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #c25619;
 }
 
 #name {
@@ -26,7 +30,7 @@ body {
 }
 
 .home-btn:hover {
-  border: 1px solid black;
+  border: 2px solid black;
   color: black;
 }
 
@@ -41,7 +45,7 @@ body {
 
 .down-arrow-div {
   position: absolute;
-  left: 50%;
+  right: 48%;
   bottom: 10px;
 }
 
@@ -62,11 +66,6 @@ body {
   80% {
     -webkit-transform: translateY(-20px);
   }
-}
-
-#details {
-  color: white;
-  font-size: 1.5vw;
 }
 
 /*color change animation (NOT IN USE)*/
@@ -161,4 +160,33 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+#details {
+  font-size: 1.5em;
+  color: white;
+  background-color: #26477d;
+}
+
+#projects-showroom {
+  font-size: 1.5vw;
+  background-color: #eda926;
+}
+
+.card {
+  box-shadow: 10px 10px #888888;
+}
+
+.card-header {
+  color: white;
+}
+
+.card-body {
+  color: white;
+  font-size: 1em;
+}
+
+.view-project-btn {
+  border: 1px solid black !important;
+  box-shadow: 2px 2px black;
 }

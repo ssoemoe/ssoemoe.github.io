@@ -33,23 +33,35 @@
             <span class="typed" id="name"></span>
           </h1>
           <div class="row m-5">
-            <a id="about-me" class="home-btn col-xs-3 m-2 p-2" href=""
+            <a id="about-me" class="home-btn col-xs-3 m-2 p-2" href="#myself"
               >About Me</a
             >
-            <a id="projects" class="home-btn col-xs-3 m-2 p-2" href=""
+            <a
+              id="projects"
+              class="home-btn col-xs-3 m-2 p-2"
+              href="#projects-showroom"
               >Projects</a
             >
-            <a id="resume" class="home-btn col-xs-3 m-2 p-2" href="">Resume</a>
+            <a
+              id="resume"
+              class="home-btn col-xs-3 m-2 p-2"
+              href="./media/resume.pdf"
+              target="blank"
+              >Resume</a
+            >
             <a id="games" class="home-btn col-xs-3 m-2 p-2" href="">Games</a>
           </div>
           <div id="activities-div m-5">
-            <a href="">
+            <a href="mailto:shanekhantsoemoe98@gmail.com">
               <img class="activity-img" height="50" src="./media/gmail.png" />
             </a>
-            <a href="">
+            <a href="https://github.com/ssoemoe" target="blank">
               <img class="activity-img" height="50" src="./media/github.svg" />
             </a>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/shane-khant-soe-moe-24ab45113/"
+              target="blank"
+            >
               <img
                 class="activity-img"
                 height="50"
@@ -62,60 +74,56 @@
       </div>
     </div>
     <div class="down-arrow-div">
-      <img id="bouncing-down-arrow" height="50" src="media/arrow.png" />
+      <img id="bouncing-down-arrow" height="50" src="media/down-arrow.png" />
     </div>
-    <br />
     <div class="container-fluid" id="details">
       <div class="row">
-        <div class="col-md-12">
-          <h1>About Myself</h1>
-          <p>
-            I am an undergraduate Computer Science student at University of
-            Maryland, College Park. I am an incoming associate software engineer
-            at Oil Price Information Service (OPIS by IHS Markit) and have
-            worked as a full-stack Web Developer and react-native mobile
-            developer.
+        <div class="col-md-12 p-4" id="myself">
+          <h1 class="text-center mt-3 mb-3">About Me</h1>
+          <p class="m-5">
+            My name is Shane Khant Soe Moe. I am from Yangon, Myanmar and
+            currently residing in Maryland, USA. I went to the Montgomery
+            College, Rockville for A.A degree in Computer Science and the
+            University of Maryland, College Park (UMD) for B.Sc degree in
+            Computer Science (major) and Statistics (minor). Currently, I am now
+            working as an associate software engineer at Oil Price Information
+            Service (OPIS by IHS Markit). My favorite programming language are
+            C# &amp; Python. I have experience in developing web applications
+            (Django, MERN &amp; .Net Core), cross-platform mobile applications
+            (ReactNative), and IoT projects. I love the concept of the internet
+            of things (IoT) and trying to learn development tech stacks,
+            protocols and distributed systems about IoT. In my free time, I
+            would like to play FIFA mobile game, chess or participate in
+            Hackathons. My favorite football club team is Manchester United and
+            national team is Germany (Yes, I am a football fan).
           </p>
+          <div id="skills"></div>
         </div>
       </div>
     </div>
 
-    <script>
-      $(function() {
-        $(".typed").typed({
-          strings: ["Hello!", "How are you?", "I am Shane.", "Welcome!"],
-          // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-          stringsElement: null,
-          // typing speed
-          typeSpeed: 100,
-          // time before typing starts
-          startDelay: 1200,
-          // backspacing speed
-          backSpeed: 100,
-          // time before backspacing
-          backDelay: 500,
-          // loop
-          loop: true,
-          // false = infinite
-          loopCount: false,
-          // show cursor
-          showCursor: false,
-          // character for cursor
-          cursorChar: "|",
-          // attribute to type (null == text)
-          attr: null,
-          // either html or text
-          contentType: "html",
-          // call when done callback function
-          callback: function() {},
-          // starting callback function before each string
-          preStringTyped: function() {},
-          //callback for every typed string
-          onStringTyped: function() {},
-          // callback for reset
-          resetCallback: function() {}
-        });
-      });
-    </script>
+    <div class="container-fluid" id="projects-showroom">
+      <div class="row p-3">
+        <div class="col-md-12">
+          <h1 class="text-center m-3">Projects</h1>
+        </div>
+      </div>
+      <div class="card-deck p-3" id="projects-slides-1"></div>
+      <!-- This is for more projects -->
+      <!-- <div class="card-deck p-3" id="projects-slides-2"></div> -->
+    </div>
+
+    <div class="container-fluid" id="games-showroom">
+      <div class="row p-3">
+        <div class="col-md-12">
+          <h1 class="text-center m-3">My Games</h1>
+        </div>
+      </div>
+      <div class="card-deck p-3" id="games-slides-1"></div>
+      <!-- This is for more games -->
+      <!-- <div class="card-deck p-3" id="games-slides-2"></div> -->
+    </div>
+    <script src="./js/project-slides.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
