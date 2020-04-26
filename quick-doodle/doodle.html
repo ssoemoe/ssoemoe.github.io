@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Doodle</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="./styles/modal.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/doodle.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="title">
+        <h2>Quick Doodle</h2>
+        <div id="tool-buttons">
+            <button id="options-btn"><img src="./images/options.png" height="30px"></button>
+            <button id="undo-btn"><img src="./images/undo.svg" height="30px"></button>
+            <button id="redo-btn"><img src="./images/redo.svg" height="30px"></button>
+            <button id="clear-btn"><img src="./images/clear.png" height="30px"></button>
+            <button id="save-btn"><img src="./images/save.png" height="30px"></button>
+        </div>
+    </div>
+    <canvas></canvas>
+    <div id="footer">
+        Shane Khant Soe Moe &copy; 2020
+    </div>
+    <!-- The Modal (this modal code is taken from https://www.w3schools.com/howto/howto_css_modals.asp), but I coded the contents inside the modal -->
+    <div id="options-modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="all-options">
+                <label>Stroke width</label>
+                <div id="pixels-sample"></div>
+                <input type="range" min="1" max="30" value="5" class="slider" id="pen-pixels">
+                <br>
+                <label id="color-label">Color</label>
+                <input type="color" id="stroke-color" name="stroke-color" value="#000000">
+            </div>
+        </div>
+    </div>
+    <!-- Image export modal -->
+    <div id="image-format-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="all-options" style="text-align: center;">
+                <label>Image format</label>
+                <br><br>
+                <input type="radio" name="format" value="png" checked> <label>PNG</label>
+                <input type="radio" name="format" value="jpg"> <label>JPEG</label>
+                <br>
+                <input type="radio" name="format" value="gif"> <label>GIF</label>
+                <input type="radio" name="format" value="bmp"> <label>BMP</label>
+                <br>
+                <div style="text-align: center;">
+                    <button id="export-btn">Export</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/settings.js"></script>
+    <script src="./js/doodle.js"></script>
+    <script src="./js/clear.js"></script>
+    <script src="./js/historyView.js"></script>
+    <script src="./js/image-export.js"></script>
+</body>
+
+</html>
