@@ -20,7 +20,10 @@ function App() {
                 <section className="mt-50 mb-50 md:mt-50 md:mb-50 flex w-full justify-contents align-items">
                     <Home />
                 </section>
-                <div id="contact">
+                <div
+                    id="contact"
+                    className="w-full pr-5"
+                >
                     <Contact />
                 </div>
             </div>
