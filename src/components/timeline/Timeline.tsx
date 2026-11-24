@@ -20,7 +20,7 @@ export default function JobTimeline({ items = EXPERIENCES }: JobTimelineProps) {
     return (
         <section className="mx-auto max-w-3xl px-4 py-12 fade-in-slide">
             <h1 className="w-full flex align-items justify-center heading mb-3 md:mb-10">
-                Work Experience
+                Experience
             </h1>
             {/* Vertical Timeline Rail */}
             <ol className="relative border-s-2 border-slate-200 dark:border-slate-800">
