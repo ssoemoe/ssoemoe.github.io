@@ -3,6 +3,7 @@ import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import type { NavbarLink } from "./components/navbar/types";
 import Contact from "./components/contact/Contact";
+import JobTimeline from "./components/timeline/Timeline";
 
 function App() {
     const navLinks: NavbarLink[] = [
@@ -17,12 +18,15 @@ function App() {
             </p>
             <Navbar navLinks={navLinks} />
             <div className="px-10">
-                <section className="mt-50 mb-50 md:mt-50 md:mb-50 flex w-full justify-contents align-items">
+                <div id="home" className="mt-50 mb-50 md:mt-50 md:mb-50 flex w-full justify-contents align-items">
                     <Home />
-                </section>
+                </div>
+                <div id="xp">
+                    <JobTimeline />
+                </div>
                 <div
                     id="contact"
-                    className="w-full pr-5"
+                    className="w-full pr-5 mb-20"
                 >
                     <Contact />
                 </div>

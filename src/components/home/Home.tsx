@@ -3,7 +3,7 @@ import "./Home.css";
 
 export default function Home() {
     return (
-        <section id="home">
+        <section>
             Hello there.👋<br/>
             I'm Shane.<br/>
             Nice to meet you.
