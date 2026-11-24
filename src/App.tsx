@@ -6,6 +6,7 @@ import Contact from "./components/contact/Contact";
 import JobTimeline from "./components/timeline/Timeline";
 import Edu from "./components/edu/Edu";
 import Awards from "./components/awards/Awards";
+import Gallery from "./components/gallery/Gallery";
 
 function App() {
     const navLinks: NavbarLink[] = [
@@ -28,7 +29,7 @@ function App() {
                 </div>
                 <div
                     id="about"
-                    className="mx-auto max-w-3xl grid grid-cols-1 md:grid-cols-2 mb-10 md:mb-15 gap-25"
+                    className="mx-auto max-w-3xl grid grid-cols-1 md:grid-cols-2 mb-10 md:mb-15 gap-10 md:gap-25"
                 >
                     <div id="edu">
                         <Edu />
@@ -37,7 +38,13 @@ function App() {
                         <Awards />
                     </div>
                 </div>
-                <div id="xp">
+                <div
+                    id="project-gallery"
+                    className="w-full mx-auto max-w-3xl pr-5 mb-10"
+                >
+                    <Gallery />
+                </div>
+                <div id="xp" className="mb-10 md:mb-15">
                     <JobTimeline />
                 </div>
                 <div id="contact" className="w-full pr-5 mb-20">

@@ -1,4 +1,4 @@
-import { Briefcase } from "lucide-react";
+import { BriefcaseBusiness } from "lucide-react";
 import { EXPERIENCES } from "./experiences";
 
 export interface JobExperience {
@@ -18,9 +18,9 @@ interface JobTimelineProps {
 
 export default function JobTimeline({ items = EXPERIENCES }: JobTimelineProps) {
     return (
-        <section className="mx-auto max-w-3xl px-4 py-12 fade-in-slide">
+        <section className="mx-auto max-w-3xl px-4 fade-in-slide">
             <h1 className="w-full flex align-items justify-center heading mb-3 md:mb-10">
-                <Briefcase size={35} className="mr-2" />
+                <BriefcaseBusiness size={35} className="mr-2" />
                 Experience
             </h1>
             {/* Vertical Timeline Rail */}
@@ -74,7 +74,7 @@ export default function JobTimeline({ items = EXPERIENCES }: JobTimelineProps) {
                             </p>
                             {/* Tech / Skill Tags */}
                             {job.skills.length > 0 && (
-                                <div className="hidden md:block mt-4 flex flex-wrap gap-1.5">
+                                <div className="hidden md:flex mt-4 flex-wrap gap-1.5">
                                     {job.skills.map((skill) => (
                                         <span
                                             key={skill}
