@@ -7,6 +7,7 @@ import JobTimeline from "./components/timeline/Timeline";
 import Edu from "./components/edu/Edu";
 import Awards from "./components/awards/Awards";
 import Gallery from "./components/gallery/Gallery";
+import Footer from "./components/footer/Footer";
 
 function App() {
     const navLinks: NavbarLink[] = [
@@ -51,6 +52,7 @@ function App() {
                     <Contact />
                 </div>
             </div>
+            <Footer />
         </>
     );
 }
