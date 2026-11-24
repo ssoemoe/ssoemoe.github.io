@@ -17,9 +17,6 @@ function App() {
     ];
     return (
         <>
-            <p className="w-full bg-yellow-300 text-center">
-                ⚒The website is under construction.⚒
-            </p>
             <Navbar navLinks={navLinks} />
             <div className="px-10">
                 <div
