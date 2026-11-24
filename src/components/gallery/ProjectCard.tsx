@@ -27,7 +27,7 @@ export default function ProjectCard({
             <div className="flex justify-start items-center gap-2">
                 <h3 className="text-lg font-semibold text-slate-900">{name}</h3>
                 {isWinner ? (
-                    <h4 className="rounded-full h-5 bg-[#FFD700] px-2.5 py-0.5 text-xs font-medium text-slate-800 dark:bg-[#FFD700]/60 dark:text-slate-300">
+                    <h4 className="rounded-full h-5 bg-[#FFD700] px-2.5 py-0.5 text-xs font-medium text-slate-800">
                         Winner
                     </h4>
                 ) : (

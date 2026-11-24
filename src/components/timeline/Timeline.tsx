@@ -24,25 +24,25 @@ export default function JobTimeline({ items = EXPERIENCES }: JobTimelineProps) {
                 Experience
             </h1>
             {/* Vertical Timeline Rail */}
-            <ol className="relative border-s-2 border-slate-200 dark:border-slate-800">
+            <ol className="relative border-s-2 border-slate-200">
                 {items.map((job) => (
                     <li key={job.id} className="mb-5 ms-6 last:mb-0">
                         {/* Timeline Node / Dot */}
                         <span
                             aria-hidden="true"
-                            className={`absolute -start-[9px] mt-1.5 flex h-4 w-4 items-center justify-center rounded-full ring-4 ring-white dark:ring-slate-950 ${
+                            className={`absolute -start-[9px] mt-1.5 flex h-4 w-4 items-center justify-center rounded-full ring-4 ring-white ${
                                 job.isCurrent
                                     ? "bg-slate-600"
-                                    : "bg-slate-300 dark:bg-slate-700"
+                                    : "bg-slate-300"
                             }`}
                         ></span>
 
                         {/* Card Container */}
-                        <div className="rounded-xl border border-slate-200/80 bg-white p-5 shadow-xs transition hover:border-slate-300 dark:border-slate-800 dark:bg-slate-900/60 dark:hover:border-slate-700">
+                        <div className="rounded-xl border border-slate-200/80 bg-white p-5 shadow-xs transition hover:border-slate-300">
                             {/* Header: Role, Company & Date */}
                             <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-center">
                                 <div>
-                                    <h3 className="text-[0.9rem] md:text-lg font-semibold text-slate-900 dark:text-slate-100">
+                                    <h3 className="text-[0.9rem] md:text-lg font-semibold text-slate-900">
                                         {job.role}
                                     </h3>
                                     <div className="flex flex-wrap items-center gap-x-2 text-[0.8rem] md:text-[0.9rem]">
@@ -62,14 +62,14 @@ export default function JobTimeline({ items = EXPERIENCES }: JobTimelineProps) {
                                 </div>
 
                                 <time
-                                    className="mt-1 inline-flex w-fit items-center rounded-lg bg-slate-100 px-2.5 py-1 text-slate-700 sm:mt-0 dark:bg-slate-800 dark:text-slate-300 
+                                    className="mt-1 inline-flex w-fit items-center rounded-lg bg-slate-100 px-2.5 py-1 text-slate-700 sm:mt-0
                                     text-[0.7rem] md:text-[0.8rem]"
                                 >
                                     {job.period}
                                 </time>
                             </div>
                             {/* Summary */}
-                            <p className="hidden md:block mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                            <p className="hidden md:block mt-3 text-sm leading-relaxed text-slate-600">
                                 {job.summary}
                             </p>
                             {/* Tech / Skill Tags */}
@@ -78,7 +78,7 @@ export default function JobTimeline({ items = EXPERIENCES }: JobTimelineProps) {
                                     {job.skills.map((skill) => (
                                         <span
                                             key={skill}
-                                            className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-800 dark:bg-slate-950/60 dark:text-slate-300"
+                                            className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-800"
                                         >
                                             {skill}
                                         </span>
